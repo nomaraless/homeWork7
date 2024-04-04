@@ -33,9 +33,11 @@ public class Main {
         System.out.println();
         //Задача 4
         double dep = 15000;
-        for (int c = 1; dep <= 12_000_000; c++) {
-            dep = (dep * 1.07);
-            System.out.println("Месяц " + c + ", сумма накоплений равна " + String.format("%.2f", dep) + " рублей");
+        double op = 0;
+        for (int c = 1; op <= 12_000_000; c++) {
+            op += dep;
+            op = (op * 1.07);
+            System.out.println("Месяц " + c + ", сумма накоплений равна " + String.format("%.2f", op) + " рублей");
         }
         System.out.println();
         //Задача 5
